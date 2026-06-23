@@ -158,7 +158,7 @@ export default function Destinations() {
                 {/* Form Navigation Action */}
                 <div class="flex items-center justify-between flex-wrap gap-4 pt-2">
                   <span class="text-xs text-stone-gray dark:text-gray-400">
-                    *Requires pre-granted regional pass. Handled fully by DrukTrails.
+                    *Requires pre-granted regional pass. Handled fully by HimalayanTrails.
                   </span>
                   <button
                     onClick={scrollAndBook}

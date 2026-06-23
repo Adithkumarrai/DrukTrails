@@ -58,6 +58,20 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface Inquiry {
+  id: string;
+  email: string;
+  date: string;
+  duration: number;
+  budget: string;
+  selectedInterests: string[];
+  month: string;
+  groupSize: number;
+  itineraryTitle: string;
+  pricingEstimate: string;
+  status: "new" | "reviewed" | "archived";
+}
+
 export interface ItineraryDay {
   day: number;
   title: string;

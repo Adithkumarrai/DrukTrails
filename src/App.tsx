@@ -14,10 +14,12 @@ import BlogPreview from "./components/BlogPreview";
 import FAQAccordion from "./components/FAQAccordion";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+import AdminConsole from "./components/AdminConsole";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
 
   // Synchronize Scroll Progress Bar (Apple style visual detail)
   useEffect(() => {
@@ -60,6 +62,7 @@ export default function App() {
       <Navigation 
         isDarkMode={isDarkMode} 
         onToggleDarkMode={toggleDarkMode} 
+        onOpenAdmin={() => setIsAdminOpen(true)}
       />
 
       {/* Main Structural Blocks */}
@@ -103,6 +106,12 @@ export default function App() {
 
       {/* Section 13: Footer with floating WhatsApp bubbles */}
       <Footer />
+
+      {/* Admin console panel overlay */}
+      <AdminConsole 
+        isOpen={isAdminOpen} 
+        onClose={() => setIsAdminOpen(false)} 
+      />
 
     </div>
   );

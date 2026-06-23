@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Background Graphic Asset (Tiger's Nest Majestic Shot) */}
       <div class="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1548625361-155de6c7f5f3?auto=format&fit=crop&w=1920&q=80"
+          src="/src/assets/images/image_1782182825959.jpg"
           alt="Tiger's Nest Monastery on the cliffs of Paro, Bhutan"
           class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_12s_infinite_ease-in-out]"
           loading="eager"

@@ -28,7 +28,7 @@ export default function FinalCTA() {
       {/* Background Graphic with misty mountain trees */}
       <div class="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1920&q=80" 
+          src="/src/assets/images/mount_jomolhari_1782183204611.jpg" 
           alt="Misty Bhutan alpine ranges background" 
           class="w-full h-full object-cover opacity-20"
           loading="lazy"
@@ -89,7 +89,7 @@ export default function FinalCTA() {
               </div>
 
               <span class="block text-[10px] text-gray-400 text-left pt-2 leading-tight">
-                🔒 DrukTrails Promise: No spam ever. Unsubscribe with 1-click. 100% Free.
+                🔒 HimalayanTrails Promise: No spam ever. Unsubscribe with 1-click. 100% Free.
               </span>
             </form>
           ) : (

@@ -66,7 +66,7 @@ export default function TripPlanner() {
         dailyPlan.push({
           day: 1,
           title: "Kingdom Welcome & Acclimatization",
-          activity: "Arrive at Paro International Airport (one of the world's most thrilling landings). Meet your dedicated local DrukTrails guide. Transfer to Thimphu and view the illuminated Tashichho Dzong.",
+          activity: "Arrive at Paro International Airport (one of the world's most thrilling landings). Meet your dedicated local HimalayanTrails guide. Transfer to Thimphu and view the illuminated Tashichho Dzong.",
           accommodation: budget === "luxury" ? "Amankora Thimphu Lodge" : budget === "mid-range" ? "Le Méridien Thimphu" : "Hotel Kisa"
         });
 
@@ -142,7 +142,7 @@ export default function TripPlanner() {
         dailyPlan.push({
           day: duration,
           title: "Tashi Delek (Heartfelt Farewell)",
-          activity: "Have your final organic breakfast in the valley. Your local DrukTrails guide and driver provide private chauffeur escort to Paro Airport for your departure.",
+          activity: "Have your final organic breakfast in the valley. Your local HimalayanTrails guide and driver provide private chauffeur escort to Paro Airport for your departure.",
           accommodation: "None (International Flight)"
         });
 
@@ -153,7 +153,7 @@ export default function TripPlanner() {
           summary: `This bespoke journey is configured for ${groupSize} guests during ${month}. It balances Bhutan's mandatory high-value carbon-negative regulations with deeply immersive cultural highlights, prioritizing ecological mindfulness.`,
           dailyPlan: dailyPlan,
           pricingEstimate: estimatedTotal.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }),
-          permitStatus: "Guaranteed (Permit quota reserved under DrukTrails active block)"
+          permitStatus: "Guaranteed (Permit quota reserved under HimalayanTrails active block)"
         });
         
         setIsGenerating(false);
@@ -173,6 +173,44 @@ export default function TripPlanner() {
       return;
     }
     setEmailError("");
+
+    // Create a robust inquiry structure
+    const newInquiry = {
+      id: "INQ-" + Math.floor(100000 + Math.random() * 900000),
+      email: emailInput,
+      date: new Date().toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }),
+      duration: duration,
+      budget: budget,
+      selectedInterests: selectedInterests,
+      month: month,
+      groupSize: groupSize,
+      itineraryTitle: generatedItinerary?.title || `Custom ${duration}-Day Bhutanese Odyssey`,
+      pricingEstimate: generatedItinerary?.pricingEstimate || "$1,850",
+      status: "new"
+    };
+
+    // Save to local storage
+    const existingStr = localStorage.getItem("druktrails_inquiries");
+    let list = [];
+    if (existingStr) {
+      try {
+        list = JSON.parse(existingStr);
+      } catch (err) {
+        list = [];
+      }
+    }
+    list.unshift(newInquiry);
+    localStorage.setItem("druktrails_inquiries", JSON.stringify(list));
+
+    // Dispatch custom event so the Admin page or button updates in real-time
+    window.dispatchEvent(new Event("druktrails_new_inquiry"));
+
     setItinerarySaved(true);
   };
 
@@ -456,7 +494,7 @@ export default function TripPlanner() {
 
                 {/* Subtext info */}
                 <span class="block text-[9px] text-stone-gray dark:text-gray-400 mt-4 text-center leading-tight">
-                  🔒 DrukTrails strict privacy: Your details will never be sold. Checked directly by regional Bhutanese guides representing GNH rules.
+                  🔒 HimalayanTrails strict privacy: Your details will never be sold. Checked directly by regional Bhutanese guides representing GNH rules.
                 </span>
 
               </div>

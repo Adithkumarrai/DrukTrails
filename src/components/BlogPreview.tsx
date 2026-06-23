@@ -11,7 +11,7 @@ export default function BlogPreview() {
       case "blog1":
         return {
           title: "Complete Guide to Tiger's Nest",
-          author: "DrukTrails Alpine Safety Council",
+          author: "HimalayanTrails Alpine Safety Council",
           content: [
             "Paro Taktsang, famously known as the Tiger's Nest, is Bhutan's absolute crown jewel. Perched dramatically 3,120 meters above sea level, it clings directly to a sheer granite rock mountain wall.",
             "Acclimatization is Key: We recommend staying at least 3 days in Paro (2,200m) or Thimphu before climbing. Take a steady, deep-breathing pace. Stop at the halfway visual cafeteria for organic butter tea.",

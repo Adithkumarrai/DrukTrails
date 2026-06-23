@@ -6,7 +6,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Paro Valley",
     subtitle: "Tiger's Nest & Sacred Temple Valleys",
     description: "Home to the iconic Taktsang (Tiger's Nest) Monastery, clinging dramatically to a sheer cliff 900m above the valley floor. Paro is a gateway of terraced fields and ancient watchtowers.",
-    image: "https://images.unsplash.com/photo-1548625361-155de6c7f5f3?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/image_1782182825959.jpg",
     tags: ["Monastery", "Riverside", "Sacred Heritage"]
   },
   {
@@ -14,7 +14,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Thimphu",
     subtitle: "Capital, Traditional Culture & Dzongs",
     description: "Bhutan’s vibrant capital city seamlessly blends modern development with rich Himalayan customs. Explore the massive Tashichho Dzong, the giant Buddha Dordenma, and bustling handicraft markets.",
-    image: "https://images.unsplash.com/photo-1578593139812-70b9fa638ccd?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/buddha_dordenma_1782183154763.jpg",
     tags: ["Capital City", "Artisan Crafts", "Dzongs"]
   },
   {
@@ -22,7 +22,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Punakha Valley",
     subtitle: "Riverside Dzongs & Subtropical Fertility",
     description: "Boasting Bhutan's most beautiful fortress, Punakha Dzong sits gloriously at the confluence of the Pho Chhu and Mo Chhu rivers. Famous for its mild winter orchards and suspension bridges.",
-    image: "https://images.unsplash.com/photo-1578593139965-069a531e8da6?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/punakha_dzong_1782183138785.jpg",
     tags: ["Warm Climate", "River Confluence", "Fortress"]
   },
   {
@@ -30,7 +30,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Bumthang Valley",
     subtitle: "Spiritual Heartland & Ancient Stories",
     description: "The deep spiritual core of Bhutan, composed of four highly sacred mountain valleys. Here lies Bhutan's oldest Buddhist temples, legends of Guru Rinpoche, and wild honey orchards.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/phobjikha_valley_1782183170088.jpg",
     tags: ["Ancient Temples", "Spiritual Walks", "Chorseys"]
   },
   {
@@ -38,7 +38,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Haa Valley",
     subtitle: "Hidden Border Valley & Remote Beauty",
     description: "Unopened to tourists until 2002, Haa remains an pristine alpine wonderland bordering Tibet. It features ancient tribal traditions, black yak-hair tents, and absolute mystical serenity.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/traditional_bhutanese_1782183220459.jpg",
     tags: ["Prinstine Nature", "Yak Nomads", "Untouched"]
   },
   {
@@ -46,7 +46,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Wangdue Phodrang",
     subtitle: "Bamboo Crafts & Wild Bamboo Habitats",
     description: "Known for slate stone exports and bamboo master crafts, Wangdue hosts the Phobjikha valley—the winter home of endangered, romantic Black-Necked Cranes.",
-    image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/images/phobjikha_valley_1782183170088.jpg",
     tags: ["Wildlife Sanctuary", "Bamboo Weaving", "Fortresses"]
   }
 ];
@@ -99,7 +99,7 @@ export const TREKS: Trek[] = [
     maxAltitude: "5,320m",
     season: "Oct – Nov",
     description: "Widely regarded as the hardest trek on Earth. Crosses 11 high mountain passes along the pristine Tibetan border in absolute wilderness.",
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/mount_jomolhari_1782183204611.jpg"
   },
   {
     id: "drukpath",
@@ -109,7 +109,7 @@ export const TREKS: Trek[] = [
     maxAltitude: "4,210m",
     season: "Mar – Jun, Sep – Nov",
     description: "Bhutan’s most popular, classic trek. Winds through spectacular rhododendron forests and high ruins connecting Paro and Thimphu.",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/image_1782182825959.jpg"
   },
   {
     id: "jomolhari",
@@ -119,7 +119,7 @@ export const TREKS: Trek[] = [
     maxAltitude: "4,930m",
     season: "Apr – May, Oct – Nov",
     description: "Walk inside Jigme Dorji National Park directly up to the base camp of the sacred Mount Jomolhari with breathtaking glaciers.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/mount_jomolhari_1782183204611.jpg"
   },
   {
     id: "bumthang-cultural",
@@ -129,7 +129,7 @@ export const TREKS: Trek[] = [
     maxAltitude: "3,120m",
     season: "Mar – May, Sep – Dec",
     description: "A leisurely, spiritual journey linking beautiful organic ancient villages, buckwheat farms, and historic temples of Guru Rinpoche.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/phobjikha_valley_1782183170088.jpg"
   }
 ];
 
@@ -140,7 +140,7 @@ export const FESTIVALS: Festival[] = [
     date: "March / April",
     location: "Paro Rinpung Dzong",
     description: "Bhutan’s grandest festival. Five days of sacred Cham dances, ending with the pre-dawn unveiling of the massive, sacred 350-year-old Guru Throngdrel thangka tapestry.",
-    image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/cham_dancers_1782183186809.jpg"
   },
   {
     id: "thimphu-tsechu",
@@ -148,7 +148,7 @@ export const FESTIVALS: Festival[] = [
     date: "September / October",
     location: "Tashichho Dzong courtyard",
     description: "The capital's primary celebration, drawing pilgrims from all districts dressed in their finest gho and kira silk robes to clear negative karma and witness sacred plays.",
-    image: "https://images.unsplash.com/photo-1578593139812-70b9fa638ccd?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/cham_dancers_1782183186809.jpg"
   },
   {
     id: "punakha-drubchen",
@@ -156,7 +156,7 @@ export const FESTIVALS: Festival[] = [
     date: "February / March",
     location: "Punakha Riverside Dzong",
     description: "A dramatic historical reenactment featuring local militia dressed in 17th-century combat gear, celebrating the victory over invading Tibetan forces.",
-    image: "https://images.unsplash.com/photo-1578593139965-069a531e8da6?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/punakha_dzong_1782183138785.jpg"
   },
   {
     id: "haa-summer",
@@ -164,7 +164,7 @@ export const FESTIVALS: Festival[] = [
     date: "July",
     location: "Haa Valley Meadows",
     description: "An authentic look into the nomadic lifestyle of the yak-herders. Includes traditional sport competitions (like heavy stone throwing), alpine butter crafts, and herbal wine tastings.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/traditional_bhutanese_1782183220459.jpg"
   },
   {
     id: "black-crane",
@@ -172,7 +172,7 @@ export const FESTIVALS: Festival[] = [
     date: "November 11th",
     location: "Gangtey Monastery, Phobjikha",
     description: "A heartwarming conservation festival celebrating the arrival of the endangered cranes. Settle in the ancient monastery courtyard to see schoolchildren perform bird-dance dramas.",
-    image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=600&q=80"
+    image: "/src/assets/images/phobjikha_valley_1782183170088.jpg"
   }
 ];
 
@@ -182,7 +182,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Alice Vance",
     country: "Canada",
     rating: 5,
-    quote: "My 10-day trip with DrukTrails completely re-centered my life. Hiking to Tiger's Nest in the misty morning and smelling wild pine is an experience I will carry with me forever. The local guides treated me like family.",
+    quote: "My 10-day trip with HimalayanTrails completely re-centered my life. Hiking to Tiger's Nest in the misty morning and smelling wild pine is an experience I will carry with me forever. The local guides treated me like family.",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&h=150&w=150&q=80"
   },
   {
@@ -190,7 +190,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Kenji Sato",
     country: "Japan",
     rating: 5,
-    quote: "Bhutan's forest covers and sustainable commitment are inspiring. DrukTrails organized our photography route with precision. From sunrise over the Punakha river to remote temple blessings, everything was pristine.",
+    quote: "Bhutan's forest covers and sustainable commitment are inspiring. HimalayanTrails organized our photography route with precision. From sunrise over the Punakha river to remote temple blessings, everything was pristine.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&h=150&w=150&q=80"
   },
   {
@@ -198,7 +198,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Dr. Sophia Mueller",
     country: "Germany",
     rating: 5,
-    quote: "The Gross National Happiness indicator is real. I saw it in the villages, the sustainable organic farms, and the incredible laughter of the children. DrukTrails' focus on high-value, low-volume mindfulness is the gold standard.",
+    quote: "The Gross National Happiness indicator is real. I saw it in the villages, the sustainable organic farms, and the incredible laughter of the children. HimalayanTrails' focus on high-value, low-volume mindfulness is the gold standard.",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&h=150&w=150&q=80"
   }
 ];
@@ -209,7 +209,7 @@ export const BLOGS: BlogPost[] = [
     title: "Complete Guide to Tiger's Nest Trek: Permits, Altitude & Mindful Preparation",
     category: "Trekking Guides",
     date: "June 15, 2026",
-    image: "https://images.unsplash.com/photo-1548625361-155de6c7f5f3?auto=format&fit=crop&w=500&q=80",
+    image: "/src/assets/images/image_1782182825959.jpg",
     readTime: "6 min read"
   },
   {
@@ -217,7 +217,7 @@ export const BLOGS: BlogPost[] = [
     title: "Bhutan Festivals: A Guide to the Sacred Cham Tapestries & Etiquette",
     category: "Culture Guides",
     date: "May 20, 2026",
-    image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=500&q=80",
+    image: "/src/assets/images/cham_dancers_1782183186809.jpg",
     readTime: "8 min read"
   },
   {
@@ -225,7 +225,7 @@ export const BLOGS: BlogPost[] = [
     title: "Bhutan's SDF Sustainable Fee: How Your Fee Actively Restores Himalayan Forests",
     category: "Sustainable Travel",
     date: "April 02, 2026",
-    image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=500&q=80",
+    image: "/src/assets/images/phobjikha_valley_1782183170088.jpg",
     readTime: "5 min read"
   }
 ];
@@ -239,7 +239,7 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq2",
     question: "Do I need a Visa to visit Bhutan?",
-    answer: "Except for passport holders of India, Bangladesh, and Maldives, all international travelers need a pre-arranged tourist visa. DrukTrails handles the entire visa licensing and government approval on your behalf when you secure your booking. Visa processing takes 3–5 working days."
+    answer: "Except for passport holders of India, Bangladesh, and Maldives, all international travelers need a pre-arranged tourist visa. HimalayanTrails handles the entire visa licensing and government approval on your behalf when you secure your booking. Visa processing takes 3–5 working days."
   },
   {
     id: "faq3",
@@ -254,6 +254,6 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq5",
     question: "Can I travel to Bhutan independently as a solo traveler?",
-    answer: "Yes, solo travelers are fully welcome! However, by law, you must still have a pre-registered local licensed guide and driver accompanying you for all transfers, trail treks, and monument visits. DrukTrails customizes solo tours featuring deep personal retreats, meditation sessions, and private transfers."
+    answer: "Yes, solo travelers are fully welcome! However, by law, you must still have a pre-registered local licensed guide and driver accompanying you for all transfers, trail treks, and monument visits. HimalayanTrails customizes solo tours featuring deep personal retreats, meditation sessions, and private transfers."
   }
 ];
