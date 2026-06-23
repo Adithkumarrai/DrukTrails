@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-forest-green: #0F5132;
+  --color-forest-green-dark: #0a3621;
+  --color-forest-green-light: #166942;
+  --color-bhutan-gold: #D4A017;
+  --color-bhutan-gold-dark: #b58610;
+  --color-bhutan-gold-light: #e6b833;
+  --color-sky-blue: #87CEEB;
+  --color-off-white: #F9F6EF;
+  --color-stone-gray: #6B7280;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/* Custom Scrollbar for premium Airbnb feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F6EF;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A017;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b58610;
+}
+
+/* Custom styles for animations and shadows */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Subtle pulse for floating button */
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.pulse-hover:hover {
+  animation: heartPulse 1.5s infinite ease-in-out;
+}
+
+/* Bento Theme Styles */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.bento-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid rgba(15, 81, 50, 0.08);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.dark .bento-card {
+  background: #121c15;
+  border-color: rgba(212, 160, 23, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(15, 81, 50, 0.06);
+}
+.dark .bento-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.hero-gradient {
+  background: linear-gradient(rgba(15, 81, 50, 0.65), rgba(15, 81, 50, 0.95)), 
+              linear-gradient(45deg, #1a4731 25%, transparent 25%) -50px 0, 
+              linear-gradient(-45deg, #1a4731 25%, transparent 25%) -50px 0, 
+              linear-gradient(45deg, transparent 75%, #1a4731 75%), 
+              linear-gradient(-45deg, transparent 75%, #1a4731 75%);
+  background-size: 100px 100px;
+  background-color: #0F5132;
+}
+
+.stat-badge {
+  background: rgba(212, 160, 23, 0.1);
+  color: #D4A017;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+

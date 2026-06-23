@@ -1,0 +1,6 @@
+{
+  "name": "DrukTrails",
+  "description": "Experience Bhutan Mindfully. Discover sustainable, rich cultural journeys and breathtaking trekking trails in the Last Himalayan Kingdom.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
